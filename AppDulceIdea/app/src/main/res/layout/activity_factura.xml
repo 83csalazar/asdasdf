@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    tools:context=".Factura">
+
+    <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:background="@color/griscalido"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <!-- Botón de Cierre (Salir) -->
+        <ImageButton
+            android:id="@+id/btn_Notificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/campanaencendida" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="141dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            tools:src="@drawable/logo"
+            android:contentDescription="@string/todo1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDulceAnhelatte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dulceanhelatte1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingrsesar_factura"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout para EditTex y Spinners -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Spinner 1 con título -->
+        <TextView
+            android:id="@+id/textViewSpinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_opci_n3"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:minHeight="48dp" />
+
+        <!-- Edit Text 1 con título -->
+        <TextView
+            android:id="@+id/textViewEditText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_mero_de_factura2"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@string/numero_de_factura1"
+            tools:ignore="LabelFor"
+            android:autofillHints="" />
+
+        <!-- Edit Text 2 con título -->
+        <TextView
+            android:id="@+id/textViewEditText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_mero_de_factura"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@string/numero_de_factura"
+            tools:ignore="LabelFor"
+            android:autofillHints="" />
+
+        <!-- Spinner 2 con título -->
+        <TextView
+            android:id="@+id/textViewSpinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_opci_n"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Layout para botones ordenados en la parte inferior -->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="116dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- EditText con título -->
+
+        <!-- ImageButton 1 con título -->
+
+        <!-- ImageButton 2 con título -->
+
+        <ImageButton
+            android:id="@+id/btn_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/btnagregar" />
+    </LinearLayout>
+
+    <!-- Cuarto LinearLayout con fondo anaranjado para la última fila de botones -->
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_marginTop="-17dp"
+        android:background="@color/anaranjado"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- ImageButton 3 con título -->
+
+        <!-- Contenido de la última fila de botones -->
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/btnhome" />
+    </LinearLayout>
+</LinearLayout>

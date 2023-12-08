@@ -1,0 +1,8 @@
+<resources>
+    <string name="spiner">spiner</string>
+    <string-array name="categories_array">
+        <item>Comida</item>
+        <item>Deportes</item>
+        <!-- Agrega más categorías según sea necesario -->
+    </string-array>
+</resources>
