@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Home">
+
+    <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:background="@color/griscalido"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <!-- Botón de Cierre (Salir) -->
+        <ImageButton
+            android:id="@+id/btn_Notificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/app_name"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:src="@drawable/campanaencendida" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="141dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/logo"
+            android:contentDescription="@string/todo" />  <!-- Ajuste para ubicar la imagen un poco más arriba -->
+        android:layout_marginStart="8dp"  <!-- Ajuste para ubicar la imagen un poco más a la izquierda -->
+        android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">  <!-- Ajuste para ubicar el LinearLayout a la derecha de la imagen -->
+
+            <TextView
+                android:id="@+id/textViewDulceAnhelatte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dulceanhelatte"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_de_administraci_n"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>    <!-- Segundo LinearLayout con fondo blanco para la fila de botones numerados -->
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_below="@id/firstLayout"
+        android:layout_marginTop="-3dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Contenido de la fila de botones numerados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_Factura"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btnfactura"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresar Factura"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_Ingredientes"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btningredientes"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredientes"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_Recetas"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btninventario"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recetas"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_IngrUser"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btnusuario"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresar Usuario"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_Reporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btnreportes"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reporte de ventas"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_inventario"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btninventario"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inventario"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tercer LinearLayout con fondo gris sin contenido -->
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_below="@id/secondLayout"
+        android:background="@color/griscalido"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sin contenido -->
+
+    </LinearLayout>
+
+    <!-- Cuarto LinearLayout con fondo anaranjado para la última fila de botones -->
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_below="@id/thirdLayout"
+        android:layout_marginTop="-17dp"
+        android:background="@color/anaranjado"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"/>
+</RelativeLayout>
