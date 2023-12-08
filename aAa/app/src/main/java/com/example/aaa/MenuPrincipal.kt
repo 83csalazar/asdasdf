@@ -32,6 +32,11 @@ class MenuPrincipal : AppCompatActivity() {
             val intent = Intent(this, Facturas::class.java)
             startActivity(intent)
         }
+        button2.setOnClickListener {
+            // Crear un Intent para iniciar la actividad Facturas
+            val intent = Intent(this, Ingredientes::class.java)
+            startActivity(intent)
+        }
 
         // Aquí puedes realizar cualquier otra configuración adicional que necesites
         // Por ejemplo, configurar los listeners de los demás botones, etc.
