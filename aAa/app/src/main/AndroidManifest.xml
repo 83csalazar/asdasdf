@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AAa"
         tools:targetApi="31">
         <activity
+            android:name=".RR_SS"
+            android:exported="false" />
+        <activity
             android:name=".Recetas"
             android:exported="false" />
         <activity
@@ -23,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".Ingredientes"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".Facturas"

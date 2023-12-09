@@ -42,6 +42,30 @@ class MenuPrincipal : AppCompatActivity() {
             val intent = Intent(this, Ingredientes::class.java)
             startActivity(intent)
         }
+        // Configurar OnClickListener para el botón de ingredientes
+        button3.setOnClickListener {
+            // Crear un Intent para iniciar la actividad Ingredientes
+            val intent = Intent(this, Inventario::class.java)
+            startActivity(intent)
+        }
+        // Configurar OnClickListener para el botón de ingredientes
+        button4.setOnClickListener {
+            // Crear un Intent para iniciar la actividad Ingredientes
+            val intent = Intent(this, Usuarios::class.java)
+            startActivity(intent)
+        }
+        // Configurar OnClickListener para el botón de ingredientes
+        button5.setOnClickListener {
+            // Crear un Intent para iniciar la actividad Ingredientes
+            val intent = Intent(this, Recetas::class.java)
+            startActivity(intent)
+        }
+        // Configurar OnClickListener para el botón de ingredientes
+        button6.setOnClickListener {
+            // Crear un Intent para iniciar la actividad Ingredientes
+            val intent = Intent(this, Ingredientes::class.java)
+            startActivity(intent)
+        }
 
         // Configurar OnClickListener para el botón de notificaciones
         smallButtonImageView.setOnClickListener {

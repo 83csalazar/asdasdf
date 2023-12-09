@@ -1,7 +1,9 @@
 package com.example.aaa
 
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +23,8 @@ class Recetas : AppCompatActivity() {
         val botonAgregar = findViewById<ImageButton>(R.id.botonAgregar)
         val botonEliminar = findViewById<ImageButton>(R.id.botonEliminar)
         val botonModificar = findViewById<ImageButton>(R.id.botonModificar)
+        val btnhome = findViewById<View>(R.id.buttonHome)
+        val smallButtonImageView = findViewById<ImageView>(R.id.id_notificaciones)
 
         // Configura el RecyclerView
         //- recyclerView = findViewById(R.id.recyclerViewInventario)

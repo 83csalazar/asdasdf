@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="#E12D2E2D"
+        android:background="@color/grey"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/parte2">
@@ -97,7 +97,7 @@
             android:layout_marginEnd="16dp"
             android:hint="Fecha"/>
 
-        <!-- Cuadro para ingresar el monto -->
+        <!-- ASASASASASCuadro para ingresar el monto -->
         <EditText
             android:id="@+id/editTextMonto"
             android:layout_width="match_parent"
