@@ -13,6 +13,15 @@
         android:theme="@style/Theme.AAa"
         tools:targetApi="31">
         <activity
+            android:name=".Recetas"
+            android:exported="false" />
+        <activity
+            android:name=".Usuarios"
+            android:exported="false" />
+        <activity
+            android:name=".Inventario"
+            android:exported="false" />
+        <activity
             android:name=".Ingredientes"
             android:exported="false" />
         <activity

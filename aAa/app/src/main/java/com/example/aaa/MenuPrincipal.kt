@@ -6,12 +6,15 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
+
 
 class MenuPrincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
 
+        // Obtener referencias a las vistas
         val logoImageView = findViewById<ImageView>(R.id.id_Logo)
         val tituloTextView = findViewById<TextView>(R.id.id_Titulo)
         val subtituloTextView = findViewById<TextView>(R.id.id_Subtítulo)
@@ -32,13 +35,26 @@ class MenuPrincipal : AppCompatActivity() {
             val intent = Intent(this, Facturas::class.java)
             startActivity(intent)
         }
+
+        // Configurar OnClickListener para el botón de ingredientes
         button2.setOnClickListener {
-            // Crear un Intent para iniciar la actividad Facturas
+            // Crear un Intent para iniciar la actividad Ingredientes
             val intent = Intent(this, Ingredientes::class.java)
             startActivity(intent)
         }
 
-        // Aquí puedes realizar cualquier otra configuración adicional que necesites
-        // Por ejemplo, configurar los listeners de los demás botones, etc.
+        // Configurar OnClickListener para el botón de notificaciones
+        smallButtonImageView.setOnClickListener {
+            mostrarMensajeNotificaciones()
+        }
+
+        // Aquí puedes realizar otras configuraciones adicionales según tus necesidades
+        // Por ejemplo, configurar los listeners de los demás botones, cambiar el texto de las vistas, etc.
+    }
+
+    private fun mostrarMensajeNotificaciones() {
+        // Puedes mostrar un mensaje usando un AlertDialog o un Toast
+        // En este ejemplo, se utiliza Toast para mostrar un mensaje efímero.
+        Toast.makeText(this, "No hay notificaciones pendientes", Toast.LENGTH_SHORT).show()
     }
 }

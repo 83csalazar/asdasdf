@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="#000000"
+        android:background="#464946"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/parte2">
@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:background="#00FF00"
+        android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/parte1"
         app:layout_constraintBottom_toTopOf="@id/parte3">
@@ -79,7 +79,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <!-- Primeros 3 botones -->
             <!-- Ajusta los recursos y textos según tus necesidades -->
@@ -154,7 +155,7 @@
         android:layout_width="413dp"
         android:layout_height="156dp"
         android:layout_weight="2"
-        android:background="#808080"
+        android:background="#E67A00"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/parte2"

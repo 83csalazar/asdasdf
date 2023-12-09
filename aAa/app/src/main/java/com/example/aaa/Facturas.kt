@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
 
 class Facturas : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -40,6 +41,7 @@ class Facturas : AppCompatActivity() {
         val montoEditText = findViewById<EditText>(R.id.editTextMonto)
         val botonImprimir = findViewById<Button>(R.id.botonImprimir)
         val btnhome = findViewById<View>(R.id.buttonHome)
+        val smallButtonImageView = findViewById<ImageView>(R.id.id_notificaciones)
 
 
         // Configurar el OnClickListener para el botón de imprimir
@@ -67,5 +69,18 @@ class Facturas : AppCompatActivity() {
             // Finalizar la actividad actual (Facturas)
             finish()
         }
+        // Configurar OnClickListener para el botón de notificaciones
+        smallButtonImageView.setOnClickListener {
+            mostrarMensajeNotificaciones()
+        }
+
+        // Aquí puedes realizar otras configuraciones adicionales según tus necesidades
+        // Por ejemplo, configurar los listeners de los demás botones, cambiar el texto de las vistas, etc.
+    }
+
+    private fun mostrarMensajeNotificaciones() {
+        // Puedes mostrar un mensaje usando un AlertDialog o un Toast
+        // En este ejemplo, se utiliza Toast para mostrar un mensaje efímero.
+        Toast.makeText(this, "No hay notificaciones pendientes", Toast.LENGTH_SHORT).show()
     }
 }
