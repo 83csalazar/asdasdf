@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Usuarios">
+
+    <!-- Parte 1 - 30% de la pantalla con fondo negro -->
+    <LinearLayout
+        android:id="@+id/parte1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#464946"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/parte2">
+
+        <!-- ImageView para el logo de la empresa -->
+        <ImageView
+            android:id="@+id/id_notificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/campanaencendida"
+            tools:srcCompat="@drawable/campanaencendida" />
+
+        <ImageView
+            android:id="@+id/id_Logo"
+            android:layout_width="143dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <!-- Título y subtitulo -->
+        <TextView
+            android:id="@+id/id_Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Título"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/id_Subtítulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Subtítulo"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Imagen botón pequeño en la parte superior derecha -->
+    </LinearLayout>
+
+    <!-- Parte 2 - 50% de la pantalla con fondo verde y tabla de ingredientes -->
+    <LinearLayout
+        android:id="@+id/parte2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#464946"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/parte1"
+        app:layout_constraintBottom_toTopOf="@id/parte3">
+
+        <!-- RecyclerView para mostrar la tabla de ingredientes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewInventario"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:padding="16dp" />
+        <!-- Botones para manipular la tabla -->
+        <LinearLayout
+            android:id="@+id/recyclerViewUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/botonAgregar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btnagregar" />
+
+            <ImageButton
+                android:id="@+id/botonEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btntrash" />
+
+            <ImageButton
+                android:id="@+id/botonModificar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btneditar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Parte 3 - 20% de la pantalla con fondo gris y un botón en el centro -->
+    <LinearLayout
+        android:id="@+id/parte3"
+        android:layout_width="413dp"
+        android:layout_height="156dp"
+        android:layout_weight="2"
+        android:background="@color/orange"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parte2"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <!-- Botón en el centro -->
+        <!-- Ajusta el recurso según tus necesidades -->
+        <ImageButton
+            android:id="@+id/buttonHome"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnhome"
+            tools:srcCompat="@drawable/btnhome" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
