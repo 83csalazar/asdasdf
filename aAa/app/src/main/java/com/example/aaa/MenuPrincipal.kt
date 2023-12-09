@@ -63,7 +63,7 @@ class MenuPrincipal : AppCompatActivity() {
         // Configurar OnClickListener para el botón de ingredientes
         button6.setOnClickListener {
             // Crear un Intent para iniciar la actividad Ingredientes
-            val intent = Intent(this, Ingredientes::class.java)
+            val intent = Intent(this, RR_SS::class.java)
             startActivity(intent)
         }
 
